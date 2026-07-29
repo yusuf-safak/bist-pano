@@ -1,0 +1,73 @@
+<!doctype html><html lang="tr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Forward-XU100-v1 · Canlı Takip Panosu</title>
+<style>
+:root{--bg:#f6f8f7;--card:#fff;--ink:#182420;--sub:#5c6b64;--line:#e2e8e5;--accent:#2f9e5f;--accentd:#255e3e;--pos:#0e7a45;--neg:#c23a3a;--amber:#b8862f}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1613;--card:#18211d;--ink:#e8efea;--sub:#9db0a6;--line:#2a3630;--accent:#3fbf74;--pos:#4fd18a;--neg:#f0736f;--amber:#d6a94a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5;font-size:15px}
+.wrap{max-width:960px;margin:0 auto;padding:22px 18px 60px}
+header{border-bottom:2px solid var(--accent);padding-bottom:14px;margin-bottom:20px}
+h1{font-size:22px;margin:0 0 4px;letter-spacing:-.2px}.tag{display:inline-block;background:var(--accent);color:#fff;font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;vertical-align:middle;margin-left:6px}
+.sub{color:var(--sub);font-size:13px;margin-top:4px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:18px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.k-lbl{color:var(--sub);font-size:12px;text-transform:uppercase;letter-spacing:.4px}.k-val{font-size:22px;font-weight:750;margin:3px 0}.k-sub{color:var(--sub);font-size:12.5px}
+h2{font-size:15px;margin:26px 0 8px;color:var(--accentd);border-left:3px solid var(--accent);padding-left:9px}
+@media(prefers-color-scheme:dark){h2{color:var(--accent)}}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14px}
+th{background:rgba(47,158,95,.08);text-align:left;padding:9px 12px;font-size:11.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--sub);font-weight:700}
+td{padding:9px 12px;border-top:1px solid var(--line)}td.r{text-align:right;font-variant-numeric:tabular-nums}
+.pos{color:var(--pos);font-weight:700}.neg{color:var(--neg);font-weight:700}.zero{color:var(--sub)}
+.empty{color:var(--sub);text-align:center;font-style:italic;padding:16px}
+.wide{overflow-x:auto}
+.banner{background:rgba(184,134,47,.1);border:1px solid rgba(184,134,47,.35);border-radius:12px;padding:13px 16px;font-size:13.5px;color:var(--ink);margin:16px 0}
+.banner b{color:var(--amber)}
+.foot{margin-top:28px;padding:16px;background:var(--card);border:1px solid var(--line);border-radius:12px;font-size:12.5px;color:var(--sub);line-height:1.65}
+.foot b{color:var(--ink)}
+.muh{font-size:12.5px;color:var(--sub);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-top:6px}
+</style></head><body><div class="wrap">
+
+<header>
+  <h1>BIST Karar-Destek Sistemi <span class="tag">Forward-XU100-v1</span></h1>
+  <div class="sub">Canlı kağıt-işlem (paper trading) takibi · XU100 evreni · otomatik güncellenir (her hafta içi akşam) · son: <b>2026-07-29</b></div>
+</header>
+
+<div class="banner"><b>⚠️ Bu bir kanıt-toplama sistemidir, para kazanma aracı değil.</b> İşlemler <b>sanaldır</b> (gerçek para yok). Amaç: geçmiş testin ("backtest") vaadi ile gerçek canlı sonucun tutup tutmadığını ölçmek. Geçmiş test bu sistemin piyasayı (endeksi) geçemediğini gösterdi; bu pano onu canlıda teyit/çürütür. <b>Anlamlı yorum için 3-6 ay ve onlarca kapanmış işlem gerekir.</b></div>
+
+
+    <div class="cards">
+      <div class="card"><div class="k-lbl">Son güncelleme</div><div class="k-val">2026-07-29</div><div class="k-sub">2 geçerli gün</div></div>
+      <div class="card"><div class="k-lbl">Şu anki durum</div><div class="k-val">Nakitte (sistem 'alma' diyor)</div><div class="k-sub">0 geçersiz gün (veri eksik)</div></div>
+      <div class="card"><div class="k-lbl">Kapanmış işlem</div><div class="k-val">0</div><div class="k-sub">kazanma %0</div></div>
+      <div class="card"><div class="k-lbl">Ort. işlem getirisi</div><div class="k-val zero">+0.00%</div><div class="k-sub">kapanan işlem başına</div></div>
+    </div>
+
+<h2>Aylık performans — sistem vs endeks (XU100)</h2>
+<div class="wide"><table>
+<tr><th>Ay</th><th class="r">İşlem</th><th class="r">Sistem ort %</th><th class="r">Kazanma</th><th class="r">Endeks %</th><th class="r">Fark</th></tr>
+<tr><td colspan='6' class='empty'>Henüz kapanmış işlem yok — sistem kanıt biriktiriyor.</td></tr>
+</table></div>
+<div class="muh">Not: "Sistem ort %" = o ay kapanan işlemlerin eşit-ağırlıklı ortalama getirisi (her işlem ~10 gün tutulur, tam ay değil). "Endeks %" = XU100'ün o ayki hareketi. İkisi birebir aynı zemin değil; yön/büyüklük karşılaştırmasıdır.</div>
+
+<h2>Açık pozisyonlar</h2>
+<div class="wide"><table>
+<tr><th>Hisse</th><th class="r">Giriş</th><th class="r">Son</th><th class="r">Getiri</th><th class="r">Stop</th><th class="r">Gün</th></tr>
+<tr><td colspan='6' class='empty'>Açık pozisyon yok (sistem nakitte).</td></tr>
+</table></div>
+
+<h2>Son kapanan işlemler</h2>
+<div class="wide"><table>
+<tr><th>Hisse</th><th class="r">Giriş tarihi</th><th class="r">Kapanış</th><th class="r">Getiri</th><th>Neden</th></tr>
+<tr><td colspan='5' class='empty'>Henüz kapanmış işlem yok.</td></tr>
+</table></div>
+
+<h2>Veri sağlığı (son gün)</h2>
+<div class="muh">beklenen 100 · uygun 99 · veri eksik 0 · yeni-ihraç dışı 1 · likidite eleme 0</div>
+
+<div class="foot">
+<b>Yöntem ve dürüstlük.</b> Sistem her hafta içi XU100'ü teknik kriterlerle tarar, rejim/temel/değerleme katmanlarını ekler, ADAY çıkanları sanal olarak açar (t+1 açılış giriş, ATR stop, 2R hedef, ~10 gün süre). Veri eksik olan gün <b>INVALID</b> sayılır, sinyal üretilmez, geriye dönük kayıt yazılmaz. Kod dondurulmuştur; kural değişirse mevcut seri bozulmaz, yeni sürüm açılır.
+<br><br><b>Dürüst sınır:</b> Düzeltilmiş, lookahead'siz, gerçekçi-maliyetli geçmiş testte sistem pasif endeksi geçemedi (excess p≈0,58, istatistiksel olarak anlamsız). Bu canlı test o sonucu doğrulamak/çürütmek içindir; <b>kâr garantisi yoktur, yatırım tavsiyesi değildir.</b>
+</div>
+
+</div></body></html>
