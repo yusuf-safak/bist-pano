@@ -38,7 +38,7 @@ td{padding:9px 12px;border-top:1px solid var(--line)}td.r{text-align:right;font-
 
     <div class="cards">
       <div class="card"><div class="k-lbl">Son güncelleme</div><div class="k-val">2026-07-31</div><div class="k-sub">4 geçerli gün</div></div>
-      <div class="card"><div class="k-lbl">Şu anki durum</div><div class="k-val">2 açık pozisyon</div><div class="k-sub">0 geçersiz gün (veri eksik)</div></div>
+      <div class="card"><div class="k-lbl">Şu anki durum</div><div class="k-val">2 açık pozisyon</div><div class="k-sub">1 geçersiz gün (veri eksik)</div></div>
       <div class="card"><div class="k-lbl">Kapanmış işlem</div><div class="k-val">0</div><div class="k-sub">kazanma %0</div></div>
       <div class="card"><div class="k-lbl">Ort. işlem getirisi</div><div class="k-val zero">+0.00%</div><div class="k-sub">kapanan işlem başına</div></div>
     </div>
@@ -53,12 +53,12 @@ td{padding:9px 12px;border-top:1px solid var(--line)}td.r{text-align:right;font-
 <h2>Açık pozisyonlar</h2>
 <div class="wide"><table>
 <tr><th>Hisse</th><th class="r">Giriş</th><th class="r">Son</th><th class="r">Getiri</th><th class="r">Stop</th><th class="r">Gün</th></tr>
-<tr><td><b>PASEU</b></td><td class='r'>150.0</td><td class='r'>155.0</td><td class='r pos'>+3.3%</td><td class='r'>127.51</td><td class='r'>1g</td></tr><tr><td><b>AKSA</b></td><td class='r'>13.0</td><td class='r'>13.0</td><td class='r zero'>+0.0%</td><td class='r'>11.86</td><td class='r'>0g</td></tr>
+<tr><td><b>PASEU</b></td><td class='r'>149.7243</td><td class='r'>169.0</td><td class='r pos'>+12.5%</td><td class='r'>127.01</td><td class='r'>1g</td></tr><tr><td><b>AKSA</b></td><td class='r'>13.1197</td><td class='r'>12.5</td><td class='r neg'>-5.1%</td><td class='r'>11.95</td><td class='r'>0g</td></tr>
 </table></div>
 
 <h2>Son kapanan işlemler</h2>
 <div class="wide"><table>
-<tr><th>Hisse</th><th class="r">Giriş tarihi</th><th class="r">Kapanış</th><th class="r">Getiri</th><th>Neden</th></tr>
+<tr><th>Hisse</th><th class="r">Sinyal tarihi</th><th class="r">Kapanış</th><th class="r">Getiri</th><th>Neden</th></tr>
 <tr><td colspan='5' class='empty'>Henüz kapanmış işlem yok.</td></tr>
 </table></div>
 
@@ -66,7 +66,7 @@ td{padding:9px 12px;border-top:1px solid var(--line)}td.r{text-align:right;font-
 <div class="muh">beklenen 100 · uygun 99 · veri eksik 0 · yeni-ihraç dışı 1 · likidite eleme 0</div>
 
 <div class="foot">
-<b>Yöntem ve dürüstlük.</b> Sistem her hafta içi XU100'ü teknik kriterlerle tarar, rejim/temel/değerleme katmanlarını ekler, ADAY çıkanları sanal olarak açar (t+1 açılış giriş, ATR stop, 2R hedef, ~10 gün süre). Veri eksik olan gün <b>INVALID</b> sayılır, sinyal üretilmez, geriye dönük kayıt yazılmaz. Kod dondurulmuştur; kural değişirse mevcut seri bozulmaz, yeni sürüm açılır.
+<b>Yöntem ve dürüstlük.</b> Sistem her hafta içi XU100'ü teknik kriterlerle tarar, rejim/temel katmanlarını ekler; ADAY çıkan sinyal ertesi işlem günü <b>açılışından</b> sanal olarak alınır (%0,15 kayma dahil; açılış sinyal kapanışının %9,5 üstündeyse giriş iptal). Çıkış: gün içi düşük fiyatla kontrol edilen ATR stop (gap-through dahil) veya 10 işlem günü sonunda kapanış; hedef seviyeleri bilgi amaçlıdır. Getiri temettü dahil hesaplanır ve işlem başına %0,4 maliyet düşülür (geçmiş testle birebir aynı kurallar). Veri eksik veya güne ait olmayan (tatil/bayat) gün <b>geçersiz</b> sayılır, sinyal üretilmez, geriye dönük kayıt yazılmaz. Kod dondurulmuştur; kural değişirse mevcut seri bozulmaz, yeni sürüm açılır.
 <br><br><b>Dürüst sınır:</b> Düzeltilmiş, lookahead'siz, gerçekçi-maliyetli geçmiş testte sistem pasif endeksi geçemedi (excess p≈0,58, istatistiksel olarak anlamsız). Bu canlı test o sonucu doğrulamak/çürütmek içindir; <b>kâr garantisi yoktur, yatırım tavsiyesi değildir.</b>
 </div>
 
