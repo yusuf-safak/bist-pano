@@ -3,8 +3,8 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Forward-XU100-v1 · Canlı Takip Panosu</title>
 <style>
-:root{--bg:#f6f8f7;--card:#fff;--ink:#182420;--sub:#5c6b64;--line:#e2e8e5;--accent:#2f9e5f;--accentd:#255e3e;--pos:#0e7a45;--neg:#c23a3a;--amber:#b8862f}
-@media(prefers-color-scheme:dark){:root{--bg:#0f1613;--card:#18211d;--ink:#e8efea;--sub:#9db0a6;--line:#2a3630;--accent:#3fbf74;--pos:#4fd18a;--neg:#f0736f;--amber:#d6a94a}}
+:root{--bg:#f6f8f7;--card:#fff;--ink:#182420;--sub:#5c6b64;--line:#e2e8e5;--accent:#2f9e5f;--accentd:#255e3e;--accent3:#3878c7;--pos:#0e7a45;--neg:#c23a3a;--amber:#b8862f}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1613;--card:#18211d;--ink:#e8efea;--sub:#9db0a6;--line:#2a3630;--accent:#3fbf74;--accent3:#6aa5e8;--pos:#4fd18a;--neg:#f0736f;--amber:#d6a94a}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5;font-size:15px}
 .wrap{max-width:960px;margin:0 auto;padding:22px 18px 60px}
 header{border-bottom:2px solid var(--accent);padding-bottom:14px;margin-bottom:20px}
@@ -43,23 +43,29 @@ td{padding:9px 12px;border-top:1px solid var(--line)}td.r{text-align:right;font-
       <div class="card"><div class="k-lbl">Ort. işlem getirisi</div><div class="k-val zero">+0.00%</div><div class="k-sub">kapanan işlem başına</div></div>
     </div>
 
-<h2>Sanal portföy · 1.000.000 TL simülasyonu (28.07'den beri)</h2>
+<h2>Sanal portföy · 1.000.000 TL simülasyonu (28.07'den beri) · iki model yan yana</h2>
 <div class="cards">
-  <div class="card"><div class="k-lbl">Güncel değer</div><div class="k-val pos">1.064.837 TL</div><div class="k-sub">son gün: 2026-08-04</div></div>
-  <div class="card"><div class="k-lbl">Kar / zarar</div><div class="k-val pos">+64.837 TL</div><div class="k-sub">%+6.48</div></div>
-  <div class="card"><div class="k-lbl">Pozisyon</div><div class="k-val">4 açık</div><div class="k-sub">0 kapanmış işlem</div></div>
+  <div class="card"><div class="k-lbl"><span style="color:var(--accent)">●</span> Model B · dilim + dokunma</div><div class="k-val pos">1.032.602 TL</div><div class="k-sub">%+3.26 · girişte %25 dilim, çıkışa kadar dokunulmaz</div></div>
+  <div class="card"><div class="k-lbl"><span style="color:var(--accent3)">●</span> Model A · günlük eşit</div><div class="k-val pos">1.064.837 TL</div><div class="k-sub">%+6.48 · her gün eşit ağırlığa dengelenir</div></div>
+  <div class="card"><div class="k-lbl">Fark (B − A)</div><div class="k-val neg">-32.236 TL</div><div class="k-sub">4 açık · 0 kapanmış işlem</div></div>
 </div>
 <div class="card" style="position:relative;padding:10px 6px 4px">
+<div style="display:flex;gap:16px;padding:2px 10px 6px;font-size:12px;color:var(--sub)">
+<span><span style="color:var(--accent)">●</span> Model B (dilim + dokunma)</span>
+<span><span style="color:var(--accent3)">●</span> Model A (günlük eşit dağıtım)</span>
+<span style="opacity:.7">kesik çizgi: 1.000.000 başlangıç</span>
+</div>
 <svg id="simsvg" viewBox="0 0 860 260" style="width:100%;height:auto;display:block">
 <line x1='60' y1='230.0' x2='760' y2='230.0' stroke='var(--line)' stroke-width='1'/><text x='52' y='234.0' text-anchor='end' font-size='11' fill='var(--sub)'>995.000</text><line x1='60' y1='159.3' x2='760' y2='159.3' stroke='var(--line)' stroke-width='1'/><text x='52' y='163.3' text-anchor='end' font-size='11' fill='var(--sub)'>1.020.054</text><line x1='60' y1='88.7' x2='760' y2='88.7' stroke='var(--line)' stroke-width='1'/><text x='52' y='92.7' text-anchor='end' font-size='11' fill='var(--sub)'>1.045.108</text><line x1='60' y1='18.0' x2='760' y2='18.0' stroke='var(--line)' stroke-width='1'/><text x='52' y='22.0' text-anchor='end' font-size='11' fill='var(--sub)'>1.070.161</text><line x1='60' y1='215.9' x2='760' y2='215.9' stroke='var(--sub)' stroke-width='1' stroke-dasharray='4 4' opacity='0.6'/><text x='60.0' y='252' text-anchor='middle' font-size='11' fill='var(--sub)'>28.07</text><text x='200.0' y='252' text-anchor='middle' font-size='11' fill='var(--sub)'>29.07</text><text x='340.0' y='252' text-anchor='middle' font-size='11' fill='var(--sub)'>30.07</text><text x='480.0' y='252' text-anchor='middle' font-size='11' fill='var(--sub)'>31.07</text><text x='620.0' y='252' text-anchor='middle' font-size='11' fill='var(--sub)'>03.08</text><text x='760.0' y='252' text-anchor='middle' font-size='11' fill='var(--sub)'>04.08</text>
-<path d="M60.0,215.9L200.0,215.9L340.0,215.9L480.0,127.8L620.0,70.9L760.0,33.0" fill="none" stroke="var(--accent)" stroke-width="2"/>
-<circle cx='60.0' cy='215.9' r='4' fill='var(--accent)' stroke='var(--card)' stroke-width='2'/><circle cx='200.0' cy='215.9' r='4' fill='var(--accent)' stroke='var(--card)' stroke-width='2'/><circle cx='340.0' cy='215.9' r='4' fill='var(--accent)' stroke='var(--card)' stroke-width='2'/><circle cx='480.0' cy='127.8' r='4' fill='var(--accent)' stroke='var(--card)' stroke-width='2'/><circle cx='620.0' cy='70.9' r='4' fill='var(--accent)' stroke='var(--card)' stroke-width='2'/><circle cx='760.0' cy='33.0' r='4' fill='var(--accent)' stroke='var(--card)' stroke-width='2'/><text x='770.0' y='37.0' font-size='12.5' font-weight='700' fill='var(--pos)'>1.064.837 TL</text>
+<path d="M60.0,215.9L200.0,215.9L340.0,215.9L480.0,127.8L620.0,70.9L760.0,33.0" fill="none" stroke="var(--accent3)" stroke-width="2"/>
+<path d="M60.0,215.9L200.0,215.9L340.0,215.9L480.0,193.9L620.0,164.6L760.0,123.9" fill="none" stroke="var(--accent)" stroke-width="2"/>
+<circle cx='60.0' cy='215.9' r='4' fill='var(--accent)' stroke='var(--card)' stroke-width='2'/><circle cx='60.0' cy='215.9' r='4' fill='var(--accent3)' stroke='var(--card)' stroke-width='2'/><circle cx='200.0' cy='215.9' r='4' fill='var(--accent)' stroke='var(--card)' stroke-width='2'/><circle cx='200.0' cy='215.9' r='4' fill='var(--accent3)' stroke='var(--card)' stroke-width='2'/><circle cx='340.0' cy='215.9' r='4' fill='var(--accent)' stroke='var(--card)' stroke-width='2'/><circle cx='340.0' cy='215.9' r='4' fill='var(--accent3)' stroke='var(--card)' stroke-width='2'/><circle cx='480.0' cy='193.9' r='4' fill='var(--accent)' stroke='var(--card)' stroke-width='2'/><circle cx='480.0' cy='127.8' r='4' fill='var(--accent3)' stroke='var(--card)' stroke-width='2'/><circle cx='620.0' cy='164.6' r='4' fill='var(--accent)' stroke='var(--card)' stroke-width='2'/><circle cx='620.0' cy='70.9' r='4' fill='var(--accent3)' stroke='var(--card)' stroke-width='2'/><circle cx='760.0' cy='123.9' r='4' fill='var(--accent)' stroke='var(--card)' stroke-width='2'/><circle cx='760.0' cy='33.0' r='4' fill='var(--accent3)' stroke='var(--card)' stroke-width='2'/><text x='770.0' y='127.9' font-size='12.5' font-weight='700' fill='var(--accent)'>1.032.602 TL</text><text x='770.0' y='37.0' font-size='12.5' font-weight='700' fill='var(--accent3)'>1.064.837 TL</text>
 </svg>
 <div id="simtip" style="position:absolute;display:none;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:12px;pointer-events:none;box-shadow:0 4px 14px rgba(0,0,0,.25)"></div>
 </div>
 <script>
 (function() {
-  var N = [{"x": 60.0, "y": 215.9, "t": "07-28", "v": "1.000.000 TL", "p": "nakit"}, {"x": 200.0, "y": 215.9, "t": "07-29", "v": "1.000.000 TL", "p": "nakit"}, {"x": 340.0, "y": 215.9, "t": "07-30", "v": "1.000.000 TL", "p": "nakit"}, {"x": 480.0, "y": 127.8, "t": "07-31", "v": "1.031.236 TL", "p": "PASEU"}, {"x": 620.0, "y": 70.9, "t": "08-03", "v": "1.051.391 TL", "p": "AKSA, PASEU"}, {"x": 760.0, "y": 33.0, "t": "08-04", "v": "1.064.837 TL", "p": "AEFES, AKSA, CRFSA, PASEU"}];
+  var N = [{"x": 60.0, "ya": 215.9, "yb": 215.9, "t": "07-28", "va": "1.000.000 TL", "vb": "1.000.000 TL", "p": "nakit"}, {"x": 200.0, "ya": 215.9, "yb": 215.9, "t": "07-29", "va": "1.000.000 TL", "vb": "1.000.000 TL", "p": "nakit"}, {"x": 340.0, "ya": 215.9, "yb": 215.9, "t": "07-30", "va": "1.000.000 TL", "vb": "1.000.000 TL", "p": "nakit"}, {"x": 480.0, "ya": 127.8, "yb": 193.9, "t": "07-31", "va": "1.031.236 TL", "vb": "1.007.809 TL", "p": "PASEU"}, {"x": 620.0, "ya": 70.9, "yb": 164.6, "t": "08-03", "va": "1.051.391 TL", "vb": "1.018.186 TL", "p": "AKSA, PASEU"}, {"x": 760.0, "ya": 33.0, "yb": 123.9, "t": "08-04", "va": "1.064.837 TL", "vb": "1.032.602 TL", "p": "AEFES, AKSA, CRFSA, PASEU"}];
   var svg = document.getElementById('simsvg'), tip = document.getElementById('simtip');
   if (!svg || !tip) return;
   svg.addEventListener('mousemove', function(ev) {
@@ -69,36 +75,40 @@ td{padding:9px 12px;border-top:1px solid var(--line)}td.r{text-align:right;font-
       var d = Math.abs(N[i].x - mx);
       if (d < bd) { bd = d; best = N[i]; }
     }
-    tip.innerHTML = '<b>' + best.t + '</b> · ' + best.v + '<br><span style="color:var(--sub)">' + best.p + '</span>';
+    tip.innerHTML = '<b>' + best.t + '</b><br>B: <b>' + best.vb + '</b> · A: ' + best.va + '<br><span style="color:var(--sub)">' + best.p + '</span>';
     tip.style.display = 'block';
-    tip.style.left = Math.min(best.x / sx, r.width - 170) + 'px';
-    tip.style.top = (best.y / sx - 8) + 'px';
+    tip.style.left = Math.min(best.x / sx, r.width - 190) + 'px';
+    tip.style.top = (Math.min(best.yb, best.ya) / sx - 8) + 'px';
   });
   svg.addEventListener('mouseleave', function() { tip.style.display = 'none'; });
 })();
 </script>
-<h2>Hisselerimiz</h2>
+<h2>Hisselerimiz · iki modelin değerleri</h2>
 <div class="wide"><table>
-<tr><th>Hisse</th><th class="r">Ağırlık</th><th class="r">TL değeri</th><th class="r">İşlem net %</th></tr>
-<tr><td><b>PASEU</b> <span style='color:var(--sub);font-size:11.5px'>(XU100)</span></td><td class='r'>%25.0</td><td class='r'>266.209 TL</td><td class='r pos'>+18.49%</td></tr><tr><td><b>AKSA</b> <span style='color:var(--sub);font-size:11.5px'>(XU100)</span></td><td class='r'>%25.0</td><td class='r'>266.209 TL</td><td class='r neg'>-4.82%</td></tr><tr><td><b>AEFES</b> <span style='color:var(--sub);font-size:11.5px'>(TUM)</span></td><td class='r'>%25.0</td><td class='r'>266.209 TL</td><td class='r neg'>-3.08%</td></tr><tr><td><b>CRFSA</b> <span style='color:var(--sub);font-size:11.5px'>(TUM)</span></td><td class='r'>%25.0</td><td class='r'>266.209 TL</td><td class='r pos'>+2.55%</td></tr>
+<tr><th>Hisse</th><th class="r">Model B değeri</th><th class="r">Model A değeri</th><th class="r">İşlem net %</th></tr>
+<tr><td><b>PASEU</b> <span style='color:var(--sub);font-size:11.5px'>(XU100)</span></td><td class='r'>296.065 TL</td><td class='r'>266.209 TL</td><td class='r pos'>+18.49%</td></tr><tr><td><b>AKSA</b> <span style='color:var(--sub);font-size:11.5px'>(XU100)</span></td><td class='r'>239.809 TL</td><td class='r'>266.209 TL</td><td class='r neg'>-4.82%</td></tr><tr><td><b>AEFES</b> <span style='color:var(--sub);font-size:11.5px'>(TUM)</span></td><td class='r'>241.354 TL</td><td class='r'>266.209 TL</td><td class='r neg'>-3.08%</td></tr><tr><td><b>CRFSA</b> <span style='color:var(--sub);font-size:11.5px'>(TUM)</span></td><td class='r'>255.375 TL</td><td class='r'>266.209 TL</td><td class='r pos'>+2.55%</td></tr>
 </table></div>
-<h2>Gün gün bakiye · her günün toplam paraya etkisi</h2>
+<h2>Gün gün bakiye · iki model yan yana</h2>
 <div class="wide"><table>
-<tr><th>Tarih</th><th class="r">Gün sonu bakiye</th><th class="r">Değişim TL</th><th class="r">Değişim %</th><th>Hisse katkıları (TL)</th></tr>
-<tr><td>2026-07-28</td><td class='r'><b>1.000.000 TL</b></td><td class='r zero'>+0 TL</td><td class='r zero'>+0.00%</td><td>-</td></tr><tr><td>2026-07-29</td><td class='r'><b>1.000.000 TL</b></td><td class='r zero'>+0 TL</td><td class='r zero'>+0.00%</td><td>-</td></tr><tr><td>2026-07-30</td><td class='r'><b>1.000.000 TL</b></td><td class='r zero'>+0 TL</td><td class='r zero'>+0.00%</td><td>-</td></tr><tr><td>2026-07-31</td><td class='r'><b>1.031.236 TL</b></td><td class='r pos'>+31.236 TL</td><td class='r pos'>+3.12%</td><td>PASEU +31.236</td></tr><tr><td>2026-08-03</td><td class='r'><b>1.051.391 TL</b></td><td class='r pos'>+20.155 TL</td><td class='r pos'>+1.95%</td><td>PASEU +46.572 · AKSA -26.417</td></tr><tr><td>2026-08-04</td><td class='r'><b>1.064.837 TL</b></td><td class='r pos'>+13.447 TL</td><td class='r pos'>+1.28%</td><td>PASEU +13.998 · AEFES -8.096 · CRFSA +6.704 · AKSA +841</td></tr>
+<tr><th>Tarih</th><th class="r">Model B</th><th class="r">B %</th><th class="r">Model A</th><th class="r">A %</th><th>Katkılar, Model B (TL)</th></tr>
+<tr><td>2026-07-28</td><td class='r'><b>1.000.000 TL</b></td><td class='r zero'>+0.00%</td><td class='r'>1.000.000 TL</td><td class='r zero'>+0.00%</td><td>-</td></tr><tr><td>2026-07-29</td><td class='r'><b>1.000.000 TL</b></td><td class='r zero'>+0.00%</td><td class='r'>1.000.000 TL</td><td class='r zero'>+0.00%</td><td>-</td></tr><tr><td>2026-07-30</td><td class='r'><b>1.000.000 TL</b></td><td class='r zero'>+0.00%</td><td class='r'>1.000.000 TL</td><td class='r zero'>+0.00%</td><td>-</td></tr><tr><td>2026-07-31</td><td class='r'><b>1.007.809 TL</b></td><td class='r pos'>+0.78%</td><td class='r'>1.031.236 TL</td><td class='r pos'>+3.12%</td><td>PASEU +7.809</td></tr><tr><td>2026-08-03</td><td class='r'><b>1.018.186 TL</b></td><td class='r pos'>+1.03%</td><td class='r'>1.051.391 TL</td><td class='r pos'>+1.95%</td><td>PASEU +23.286 · AKSA -12.909</td></tr><tr><td>2026-08-04</td><td class='r'><b>1.032.602 TL</b></td><td class='r pos'>+1.42%</td><td class='r'>1.064.837 TL</td><td class='r pos'>+1.28%</td><td>PASEU +14.970 · AEFES -7.670 · CRFSA +6.351 · AKSA +765</td></tr>
 </table></div>
-<h2>İşlem geçmişi · 1 milyonun hareket defteri</h2>
+<h2>İşlem geçmişi · Model B hareket defteri (dilim + dokunma)</h2>
 <div class="wide"><table>
-<tr><th class="r">Tarih</th><th>İşlem</th><th class="r">Tutar</th><th class="r">Adet</th><th>Açıklama</th><th class="r">Gün sonu bakiye</th></tr>
+<tr><th class="r">Tarih</th><th>İşlem</th><th class="r">Tutar</th><th class="r">Adet</th><th>Açıklama</th><th class="r">Gün sonu bakiye (B)</th></tr>
+<tr><td class='r'>2026-07-31</td><td><b>ALIŞ</b> PASEU</td><td class='r'>250.000 TL</td><td class='r'>≈1.670</td><td>%25 dilim, giriş 149.7243 (XU100)</td><td class='r'>1.007.809 TL</td></tr><tr><td class='r'>2026-08-03</td><td><b>ALIŞ</b> AKSA</td><td class='r'>251.952 TL</td><td class='r'>≈19.204</td><td>%25 dilim, giriş 13.1197 (XU100)</td><td class='r'>1.018.186 TL</td></tr><tr><td class='r'>2026-08-04</td><td><b>ALIŞ</b> AEFES</td><td class='r'>249.024 TL</td><td class='r'>≈11.251</td><td>%25 dilim, giriş 22.1332 (TUM) · nakit bölündü</td><td class='r'>1.032.602 TL</td></tr><tr><td class='r'>2026-08-04</td><td><b>ALIŞ</b> CRFSA</td><td class='r'>249.024 TL</td><td class='r'>≈1.457</td><td>%25 dilim, giriş 170.9561 (TUM) · nakit bölündü</td><td class='r'>1.032.602 TL</td></tr>
+</table></div>
+<details style="margin-top:8px"><summary style="cursor:pointer;color:var(--sub);font-size:13px">Model A hareket defteri (günlük dengelemeli)</summary>
+<div class="wide"><table style="margin-top:8px">
+<tr><th class="r">Tarih</th><th>İşlem</th><th class="r">Tutar</th><th class="r">Adet</th><th>Açıklama</th><th class="r">Gün sonu bakiye (A)</th></tr>
 <tr><td class='r'>2026-07-31</td><td><b>ALIŞ</b> PASEU</td><td class='r'>1.000.000 TL</td><td class='r'>≈6.679</td><td>giriş 149.7243 (XU100)</td><td class='r'>1.031.236 TL</td></tr><tr><td class='r'>2026-08-03</td><td><b>SATIM</b> PASEU</td><td class='r'>515.618 TL</td><td class='r'>≈3.327</td><td>dengeleme</td><td class='r'>1.051.391 TL</td></tr><tr><td class='r'>2026-08-03</td><td><b>ALIŞ</b> AKSA</td><td class='r'>515.618 TL</td><td class='r'>≈39.301</td><td>giriş 13.1197 (XU100)</td><td class='r'>1.051.391 TL</td></tr><tr><td class='r'>2026-08-04</td><td><b>SATIM</b> PASEU</td><td class='r'>299.342 TL</td><td class='r'>≈1.771</td><td>dengeleme</td><td class='r'>1.064.837 TL</td></tr><tr><td class='r'>2026-08-04</td><td><b>SATIM</b> AKSA</td><td class='r'>226.353 TL</td><td class='r'>≈18.108</td><td>dengeleme</td><td class='r'>1.064.837 TL</td></tr><tr><td class='r'>2026-08-04</td><td><b>ALIŞ</b> AEFES</td><td class='r'>262.848 TL</td><td class='r'>≈11.876</td><td>giriş 22.1332 (TUM)</td><td class='r'>1.064.837 TL</td></tr><tr><td class='r'>2026-08-04</td><td><b>ALIŞ</b> CRFSA</td><td class='r'>262.848 TL</td><td class='r'>≈1.538</td><td>giriş 170.9561 (TUM)</td><td class='r'>1.064.837 TL</td></tr>
-</table></div>
-<div class="muh">Her sabah portföy, aktif pozisyonlara eşit ağırlığa dengelenir; "dengeleme" satırları bu otomatik alım/satımlardır. Adetler yaklaşıktır (kesirli lot yok sayılmıştır).</div>
+</table></div></details>
 <details style="margin-top:8px"><summary style="cursor:pointer;color:var(--sub);font-size:13px">Sinyal bazında işlem listesi</summary>
 <div class="wide"><table style="margin-top:8px">
 <tr><th>Hisse</th><th class="r">Sinyal</th><th class="r">Giriş tarihi</th><th class="r">Giriş</th><th class="r">Çıkış / Son</th><th class="r">Net %</th><th>Durum</th></tr>
 <tr><td><b>CRFSA</b> <span style='color:var(--sub);font-size:11.5px'>(TUM)</span></td><td class='r'>08-03</td><td class='r'>08-04</td><td class='r'>170.9561</td><td class='r'>176.0</td><td class='r pos'>+2.55%</td><td>açık</td></tr><tr><td><b>AEFES</b> <span style='color:var(--sub);font-size:11.5px'>(TUM)</span></td><td class='r'>08-03</td><td class='r'>08-04</td><td class='r'>22.1332</td><td class='r'>21.54</td><td class='r neg'>-3.08%</td><td>açık</td></tr><tr><td><b>AKSA</b> <span style='color:var(--sub);font-size:11.5px'>(XU100)</span></td><td class='r'>07-31</td><td class='r'>08-03</td><td class='r'>13.1197</td><td class='r'>12.54</td><td class='r neg'>-4.82%</td><td>açık</td></tr><tr><td><b>PASEU</b> <span style='color:var(--sub);font-size:11.5px'>(XU100)</span></td><td class='r'>07-30</td><td class='r'>07-31</td><td class='r'>149.7243</td><td class='r'>178.0</td><td class='r pos'>+18.49%</td><td>açık</td></tr>
 </table></div></details>
-<div class="muh"><b>Model ve dürüstlük:</b> Sanal 1.000.000 TL, her gün sonunda iki serinin AÇIK pozisyonlarına eşit dağıtılır; girişler serilerin gerçek kayıtlı fiyatlarından, işlem başına %0,4 maliyet peşin düşülmüş, temettü dahil. Tek pozisyonlu günlerde paranın tamamı tek hissededir (modelin doğal sonucu, yüksek konsantrasyon riski). Pozisyonsuz günlerde nakit %0 sayılır, günlük dengeleme komisyonu sayılmaz. <b>Bu, gerçekleşmiş kayıtların muhasebesidir; gelecek tahmini DEĞİLDİR</b> ve sistemin istatistiksel üstünlüğü kanıtlanmamıştır. Grafik her akşam koşusunda kendini günceller.</div>
+<div class="muh"><b>İki model, aynı işlemler:</b> <b>Model B</b> her yeni sinyale, giriş sabahındaki toplam varlığın %25'i kadar dilim verir ve pozisyona çıkışa kadar dokunmaz (geçmiş testin ölçtüğü modele sadık; kazanan koşar, hiçbir gün tek hisseye %100 binilmez; sinyal azken para nakitte %0 yatar). <b>Model A</b> her gün tüm bakiyeyi açık pozisyonlara eşit dağıtır (tek pozisyonlu günde %100 konsantrasyon; günlük dengeleme komisyonu sayılmamıştır). Ortak varsayımlar: girişler serilerin gerçek kayıtlı fiyatları, işlem başına %0,4 maliyet peşin, temettü dahil. <b>Bu, gerçekleşmiş kayıtların muhasebesidir; gelecek tahmini DEĞİLDİR</b> ve sistemin istatistiksel üstünlüğü kanıtlanmamıştır. Grafik her akşam kendini günceller.</div>
 <h2>Aylık performans — sistem vs endeks (XU100)</h2>
 <div class="wide"><table>
 <tr><th>Ay</th><th class="r">İşlem</th><th class="r">Sistem ort %</th><th class="r">Kazanma</th><th class="r">Endeks %</th><th class="r">Fark</th></tr>
